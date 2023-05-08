@@ -9,14 +9,14 @@
   <link rel="icon" type="image/png" href="ico.jpg" title="Billete 200 Pesos">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-  </head>
+</head>
 
 <body class="bg-info-subtle p-4">
   <section id="BarraNavegador">
     <nav class="navbar navbar-expand-lg bg-info text-emphasis-info fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="ico.jpg" class="rounded float-start rounded-circle" width="40px"
-            height="40px" alt="$200"></a>
+        <a class="navbar-brand" href="#"><img src="ico.jpg" class="rounded float-start rounded-circle" width="30px"
+            height="30px" alt="$200"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -25,11 +25,10 @@
           <div class="navbar-nav">
             <a class="nav-link active" aria-current="page" href="#">El Billete de 200 Pesos - Serie "Animales
               Autóctonos"</a>
-            <a class="nav-link" href="#">Características</a>
-            <a class="nav-link" href="#">Tipos</a>
-            <a class="nav-link" href="#">Filigranas</a>
-            <a class="nav-link" href="#">Firmas</a>
-            <a class="nav-link" href="#">Formulario</a>
+            <a class="nav-link" href="#CarrouselTipos">Tipos</a>
+            <a class="nav-link" href="#TarjetasFiligranas">Filigranas</a>
+            <a class="nav-link" href="#TarjetasFirmas">Firmas</a>
+            <a class="nav-link" href="#Formulario">Formulario</a>
           </div>
         </div>
       </div>
@@ -45,8 +44,8 @@
           </div>
           <div class="col-lg-6 col-md-12 col-12 ps-lg-5 mt-md-5">
             <h2>El Billete de 200 Pesos<br />Serie "Animales Autóctonos"</h2>
-            <p>Características generales</p>
-            <a href="#" class="btn btn-warning">Learn More</a>
+            <p>Sus diferentes Tipos, Filigranas y Juegos de Firmas</p>
+            <a id="pretipo" href="#Formulario" class="btn btn-primary">Ir al Formulario</a>
           </div>
         </div>
       </div>
@@ -54,35 +53,37 @@
   </section>
 
   <section id="CarrouselTipos">
+    <br>
+    <br>
     <div id="carouselExampleAutoplaying" class="carousel slide carousel-dark" data-bs-ride="carousel">
-      <h2 class="text-center mb-3 mt-5">Los Tipos de Billetes de 200 Pesos</h2>
+      <h2 class="text-center mb-3">Los Tipos de Billetes de 200 Pesos</h2>
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="T1A.jpg" class="d-block w-80" alt="Tipo 1 - Anverso">
           <div class="carousel-caption d-none d-md-block">
             <h5>Tipo 1 - Anverso</h5>
-            <p>Características de T1A</p>
+            <p>Primera pequeña cola de ballena ubicada abajo</p>
           </div>
         </div>
         <div class="carousel-item">
           <img src="T2A.jpg" class="d-block w-80" alt="Tipo 2 - Anverso">
           <div class="carousel-caption d-none d-md-block">
             <h5>Tipo 2 - Anverso</h5>
-            <p>Características de T2A</p>
+            <p>Primera pequeña cola de ballena ubicada arriba</p>
           </div>
         </div>
         <div class="carousel-item">
           <img src="T1R.jpg" class="d-block w-80" alt="Tipo 1 - Reverso">
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption d-none d-md-block" style="top: 10%; bottom: auto;">
             <h5>Tipo 1 - Reverso</h5>
-            <p>Características de T1R</p>
+            <p>Detalles en los corales de color azul fuerte</p>
           </div>
         </div>
         <div class="carousel-item">
           <img src="T2R.jpg" class="d-block w-80" alt="Tipo 2 - Reverso">
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption d-none d-md-block" style="top: 10%; bottom: auto;">
             <h5>Tipo 2 - Reverso</h5>
-            <p>Características de T2R</p>
+            <p>Se eliminan detalles azul fuerte en los corales</p>
           </div>
         </div>
       </div>
@@ -100,35 +101,33 @@
   </section>
 
   <section id="TarjetasFiligranas">
+    <br>
     <h2 class="text-center mb-3 mt-5">Las filigranas en los Billetes de 200 Pesos</h2>
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <div class="col">
-        <div class="card h-100 p-5 shadow">
+        <div class="card h-80 p-5 shadow">
           <img src="F1.jpg" class="card-img-top" alt="Filigrana 1">
           <div class="card-body">
             <h5 class="card-title">Filigrana 1</h5>
-            <p class="card-text">Descripción Filigrana 1</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
+                <a href="#Formulario" class="btn btn-primary">Ir al Formulario</a>
+               </div>
         </div>
       </div>
       <div class="col">
-        <div class="card h-100 p-5 shadow">
+        <div class="card h-80 p-5 shadow">
           <img src="F2.jpg" class="card-img-top" alt="Filigrana 2">
           <div class="card-body">
             <h5 class="card-title">Filigrana 2</h5>
-            <p class="card-text">Descripción Filigrana 2</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+                     <a href="#Formulario" class="btn btn-primary">Ir al Formulario</a>
           </div>
         </div>
       </div>
       <div class="col">
-        <div class="card h-100 p-5 shadow">
+        <div class="card h-80 p-5 shadow">
           <img src="F3.jpg" class="card-img-top" alt="Filigrana 3">
           <div class="card-body">
             <h5 class="card-title">Filigrana 3</h5>
-            <p class="card-text">Descripción Filigrana 3</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#Formulario" class="btn btn-primary">Ir al Formulario</a>
           </div>
         </div>
       </div>
@@ -136,6 +135,7 @@
   </section>
 
   <section id="TarjetasFirmas">
+    <br>
     <h2 class="text-center mb-3 mt-5">Las firmas en los Billetes de 200 Pesos</h2>
     <div class="row row-cols-1 row-cols-md-3 g-5 gx-5">
       <div class="col">
@@ -143,8 +143,9 @@
           <img src="St-Mo.jpg" class="card-img-top" alt="Sturzenegger - Monzó">
           <div class="card-body">
             <h5 class="card-title">Sturzenegger - Monzó</h5>
-            <p class="card-text">Sturzenegger - Monzó</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <p class="card-text">Presidente del Banco Central: Federico Sturzenegger</p>
+            <p class="card-text">Presidente de la Cámara de Diputados: Emilio Monzó</p>
+            <a href="#Formulario" class="btn btn-primary">Ir al Formulario</a>
           </div>
         </div>
       </div>
@@ -153,8 +154,9 @@
           <img src="Sa-Mo.jpg" class="card-img-top" alt="Sandleris - Monzó">
           <div class="card-body">
             <h5 class="card-title">Sandleris - Monzó</h5>
-            <p class="card-text">Sandleris - Monzó</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <p class="card-text">Presidente del Banco Central: Guido Sandleris</p>
+            <p class="card-text">Presidente de la Cámara de Diputados: Emilio Monzó</p>
+            <a href="#Formulario" class="btn btn-primary">Ir al Formulario</a>
           </div>
         </div>
       </div>
@@ -163,8 +165,9 @@
           <img src="Pe-Ma.jpg" class="card-img-top" alt="Pesce - Massa">
           <div class="card-body">
             <h5 class="card-title">Pesce - Massa</h5>
-            <p class="card-text">Pesce - Massa</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <p class="card-text">Presidente del Banco Central: Miguel Ángel Pesce</p>
+            <p class="card-text">Presidente de la Cámara de Diputados: Sergio Massa</p>
+            <a href="#Formulario" class="btn btn-primary">Ir al Formulario</a>
           </div>
         </div>
       </div>
@@ -173,70 +176,70 @@
 
   <section id="Formulario">
     <div class="rounded border border-dark p-3 mt-5 bg-secondary-subtle">
-    <h2 class="text-center mb-3">Agregar Billetes a la Colección</h2>
-    <div class="row row-cols-1 row-cols-md-2 g-5 gx-5">
-      <div class="col">
-        <h5 class="text-center">Ítem para agregar</h5>
-        <div class="row row-cols-1 row-cols-md-3 g-5 gx-5">
-          <div class="col">
-            <p class="mb-0">Tipos:</p>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">
-                Tipo 1
-              </label>
+      <h2 class="text-center mb-3">Agregar Billetes a la Colección</h2>
+      <div class="row row-cols-1 row-cols-md-2 g-5 gx-5">
+        <div class="col">
+          <h5 class="text-center">Ítem para agregar</h5>
+          <div class="row row-cols-1 row-cols-md-3 g-5 gx-5">
+            <div class="col">
+              <p class="mb-0">Tipos:</p>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Tipo 1
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Tipo 2
+                </label>
+              </div>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-              <label class="form-check-label" for="flexRadioDefault2">
-                Tipo 2
-              </label>
+            <div class="col">
+              <p class="mb-0">Filigranas:</p>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                <label class="form-check-label" for="flexRadioDefault3">
+                  Filigrana 1
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                <label class="form-check-label" for="flexRadioDefault4">
+                  Filigrana 2
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+                <label class="form-check-label" for="flexRadioDefault5">
+                  Filigrana 3
+                </label>
+              </div>
             </div>
-          </div>
-          <div class="col">
-            <p class="mb-0">Filigranas:</p>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-              <label class="form-check-label" for="flexRadioDefault3">
-                Filigrana 1
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
-              <label class="form-check-label" for="flexRadioDefault4">
-                Filigrana 2
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
-              <label class="form-check-label" for="flexRadioDefault5">
-                Filigrana 3
-              </label>
-            </div>
-          </div>
-          <div class="col">
-            <p class="mb-0">Firmas:</p>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6">
-              <label class="form-check-label" for="flexRadioDefault6">
-                Sturzenegger - Monzó
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault7">
-              <label class="form-check-label" for="flexRadioDefault7">
-                Sandleris - Monzó
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault8">
-              <label class="form-check-label" for="flexRadioDefault8">
-                Pesce - Massa
-              </label>
+            <div class="col">
+              <p class="mb-0">Firmas:</p>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6">
+                <label class="form-check-label" for="flexRadioDefault6">
+                  Sturzenegger - Monzó
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault7">
+                <label class="form-check-label" for="flexRadioDefault7">
+                  Sandleris - Monzó
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault8">
+                <label class="form-check-label" for="flexRadioDefault8">
+                  Pesce - Massa
+                </label>
+              </div>
             </div>
           </div>
         </div>
-      </div>
         <div class="col">
           <h5>Estado de conservación</h5>
           <select class="form-select" aria-label="Default select example">
@@ -258,7 +261,7 @@
       <div class="text-center">
         <a href="#" class="btn btn-primary">Agregar billete</a>
       </div>
-    </div> 
+    </div>
   </section>
 
   <section id="Piedepagina">
@@ -274,8 +277,8 @@
     </nav>
   </section>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-  crossorigin="anonymous"></script>
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
