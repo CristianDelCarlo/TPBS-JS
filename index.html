@@ -9,6 +9,7 @@
   <link rel="icon" type="image/png" href="ico.jpg" title="Billete 200 Pesos">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="bill.css">  
 </head>
 
 <body class="bg-info-subtle p-4">
@@ -29,6 +30,8 @@
             <a class="nav-link" href="#TarjetasFiligranas">Filigranas</a>
             <a class="nav-link" href="#TarjetasFirmas">Firmas</a>
             <a class="nav-link" href="#Formulario">Formulario</a>
+            <a class="nav-link navbar-brand resaltar" onclick="window.open('lonuevo.html', 'popup', `scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,
+            width=700,height=580,left=100,top=100`)">Lo Nuevo</a>
           </div>
         </div>
       </div>
@@ -109,8 +112,8 @@
           <img src="F1.jpg" class="card-img-top" alt="Filigrana 1">
           <div class="card-body">
             <h5 class="card-title">Filigrana 1</h5>
-                <a href="#Formulario" class="btn btn-primary">Ir al Formulario</a>
-               </div>
+            <a href="#Formulario" class="btn btn-primary">Ir al Formulario</a>
+          </div>
         </div>
       </div>
       <div class="col">
@@ -118,7 +121,7 @@
           <img src="F2.jpg" class="card-img-top" alt="Filigrana 2">
           <div class="card-body">
             <h5 class="card-title">Filigrana 2</h5>
-                     <a href="#Formulario" class="btn btn-primary">Ir al Formulario</a>
+            <a href="#Formulario" class="btn btn-primary">Ir al Formulario</a>
           </div>
         </div>
       </div>
@@ -127,7 +130,7 @@
           <img src="F3.jpg" class="card-img-top" alt="Filigrana 3">
           <div class="card-body">
             <h5 class="card-title">Filigrana 3</h5>
-                        <a href="#Formulario" class="btn btn-primary">Ir al Formulario</a>
+            <a href="#Formulario" class="btn btn-primary">Ir al Formulario</a>
           </div>
         </div>
       </div>
@@ -184,13 +187,13 @@
             <div class="col">
               <p class="mb-0">Tipos:</p>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value=0 checked>
                 <label class="form-check-label" for="flexRadioDefault1">
                   Tipo 1
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value=1>
                 <label class="form-check-label" for="flexRadioDefault2">
                   Tipo 2
                 </label>
@@ -199,19 +202,19 @@
             <div class="col">
               <p class="mb-0">Filigranas:</p>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" value=2>
                 <label class="form-check-label" for="flexRadioDefault3">
                   Filigrana 1
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" value=3>
                 <label class="form-check-label" for="flexRadioDefault4">
                   Filigrana 2
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5" value=4>
                 <label class="form-check-label" for="flexRadioDefault5">
                   Filigrana 3
                 </label>
@@ -220,19 +223,19 @@
             <div class="col">
               <p class="mb-0">Firmas:</p>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6" value=5>
                 <label class="form-check-label" for="flexRadioDefault6">
                   Sturzenegger - Monzó
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault7">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault7" value=6>
                 <label class="form-check-label" for="flexRadioDefault7">
                   Sandleris - Monzó
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault8">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault8" value=7>
                 <label class="form-check-label" for="flexRadioDefault8">
                   Pesce - Massa
                 </label>
@@ -242,25 +245,96 @@
         </div>
         <div class="col">
           <h5>Estado de conservación</h5>
-          <select class="form-select" aria-label="Default select example">
-            <option selected>--Estado de conservación--</option>
-            <option value="1">Sin Circular</option>
-            <option value="2">Excelente</option>
-            <option value="3">Muy Bueno</option>
-            <option value="1">Bueno</option>
-            <option value="2">Regular</option>
-            <option value="3">Malo</option>
+          <select  id="opcionese" class="form-select" aria-label="Default select example" required>
+            <!-- <option selected>--Estado de conservación--</option> -->
+            <option value="Sin Circular">Sin Circular</option>
+            <option value="Excelente">Excelente</option>
+            <option value="Muy Bueno">Muy Bueno</option>
+            <option value="Bueno">Bueno</option>
+            <option value="Regular">Regular</option>
+            <option value="Malo">Malo</option>
           </select>
-          <div class="mb-3">
+          <!-- <div class="mb-3">
             <h5>Observaciones</h5>
-            <!-- <label for="exampleFormControlTextarea1" class="form-label">Observaciones</label> -->
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+             <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+          </div> -->
+          <br>
+          <div class="text-left">
+            <a class="btn btn-primary" id="boton">Agregar billete</a>
           </div>
         </div>
       </div>
-      <div class="text-center">
-        <a href="#" class="btn btn-primary">Agregar billete</a>
-      </div>
+      
+    </div>
+  </section>
+
+  <section id="Coleccion">
+    <h2 class="text-center mb-3 mt-5">Mi colección</h2>
+        <div class="table-responsive table-bordered">
+      <table class="table border-dark table-hover">
+
+
+          <thead>
+            <tr>
+              <th scope="col">Ítem</th>
+              <th scope="col">Valor Sin Circular</th>
+              <th scope="col">Estado de Conservación</th>
+              <th scope="col">Valor del Billete</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Tipo 1</th>
+              <td class="valorsc">$1200</td>
+              <td class="estado" id="t1e">**Billete faltante**</td>
+              <td class="valor" id="t1v">-</td>
+            </tr>
+            <tr>
+              <th scope="row">Tipo 2</th>
+              <td class="valorsc">$1400</td>
+              <td class="estado">**Billete faltante**</td>
+              <td class="valor">-</td>
+            </tr>
+            <tr>
+              <th scope="row">Filigrana 1</th>
+              <td class="valorsc">$1000</td>
+              <td class="estado">**Billete faltante**</td>
+              <td class="valor">-</td>
+            </tr>
+            <tr>
+              <th scope="row">Filigrana 2</th>
+              <td class="valorsc">$850</td>
+              <td class="estado">**Billete faltante**</td>
+              <td class="valor">-</td>
+            </tr>
+            <tr>
+              <th scope="row">Filigrana 3</th>
+              <td class="valorsc">$1100</td>
+              <td class="estado">**Billete faltante**</td>
+              <td class="valor">-</td>
+            </tr>
+            <tr>
+              <th scope="row">Sturzenegger-Monzó</th>
+              <td class="valorsc">$2000</td>
+              <td class="estado">**Billete faltante**</td>
+              <td class="valor">-</td>
+            </tr>
+            <tr>
+              <th scope="row">Sandleris-Monzó</th>
+              <td class="valorsc">$1500</td>
+              <td class="estado">**Billete faltante**</td>
+              <td class="valor">-</td>
+            </tr>
+            <tr>
+              <th scope="row">Pesce-Massa</th>
+              <td class="valorsc">$500</td>
+              <td class="estado">**Billete faltante**</td>
+              <td class="valor">-</td>
+            </tr>
+          </tbody>
+
+
+      </table>
     </div>
   </section>
 
@@ -279,6 +353,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
-</body>
+  
+    <script src="bill.js"></script>
+  
+  </body>
 
 </html>
